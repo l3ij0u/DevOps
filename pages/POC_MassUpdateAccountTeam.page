@@ -1,0 +1,227 @@
+<apex:page controller="POC_MassUpdateAccountTeam_Con" tabStyle="Account" sidebar="false" standardStylesheets="false">
+    
+    <apex:includeScript value="{!URLFOR($Resource.Bootstrap, 'jquery-3.1.0.min.js')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.Bootstrap, 'bootstrap-3.3.7-dist/js/bootstrap.js')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.Bootstrap, 'bootstrap-3.3.7-dist/css/bootstrap.css')}"/>
+    
+    <script>
+    	function checkUncheck(){
+    		
+    		if($('#idxChackboxAll').prop('checked') == true){
+    			$("[id$='idxChackbox']").prop('checked', true);
+    		}
+    		else{
+    			$("[id$='idxChackbox']").prop('checked', false);
+    		}
+    	}
+    </script>
+    
+    <style>
+        .btn {
+            display: inline-block !important;
+            padding: 6px 12px !important;
+            margin-bottom: 0 !important;
+            font-size: 14px !important;
+            font-weight: 400 !important;
+            line-height: 1.42857143 !important;
+            text-align: center !important;
+            white-space: nowrap !important;
+            vertical-align: middle !important;
+            -ms-touch-action: manipulation !important;
+            touch-action: manipulation !important;
+            cursor: pointer !important;
+            -webkit-user-select: none !important;
+            -moz-user-select: none !important;
+            -ms-user-select: none !important;
+            user-select: none !important;
+            background-image: none !important;
+            border: 1px solid transparent !important;
+            border-radius: 4px !important;
+        }
+        .btn-primary {
+            color: #fff !important;
+            background-color: #337ab7 !important;
+            border-color: #2e6da4 !important;
+        }
+        .btn-danger {
+            color: #fff !important;
+            background-color: #d9534f !important;
+            border-color: #d43f3a !important;
+        }
+    </style>
+    
+    <apex:form >
+    <div class="container">
+    <apex:pageMessages id="msgs"/>
+        
+        <apex:outputPanel id="idoutsearchPanel">
+        
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="input-group">
+                        <span class="input-group-btn"> <!--  immediate="true" reRender="idoutsearchPanel"-->      
+                            <apex:commandLink value="Search" action="{!accSearch}" reRender="idoutsearchPanel" styleClass="btn btn-primary btn-sm" onclick="$('#myModal').modal('show')" oncomplete="$('#myModal').modal('hide')" />
+                        </span>
+                        <apex:inputText value="{!accName}" styleClass="form-control" required="false" />
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <br/>
+            <div class="row">
+                <table class="table table-bordered">
+                    
+                    <thead>
+                      <tr>
+                        <th class="col-md-1"><input type="checkbox" id="idxChackboxAll" onchange="checkUncheck();"></input></th>
+                        <th class="col-md-4">Account Name</th>
+                        <th class="col-md-4">Account Group</th>
+                        <th class="col-md-3">Owner</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <apex:repeat value="{!accSearchWrpList}" var="row" id="pbSearchTable">
+                        <tr>
+                            <td class="col-md-1">
+                                <apex:inputCheckbox value="{!row.isCheck}" id="idxChackbox"/>
+                            </td>
+                            
+                            <td class="col-md-4">
+                                {!row.acc.Name}
+                            </td>
+                            
+                            <td class="col-md-4">
+                                {!row.acc.Account_Group__c}
+                            </td>
+                            
+                            <td class="col-md-3">
+                                {!row.acc.Owner.Name}
+                            </td>
+                        </tr>
+                    </apex:repeat>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 text-center"> <!-- reRender="idoutPanel" -->
+                    <apex:commandLink value="Add To List" action="{!addSearchToTeamList}" reRender="idoutPanel,idoutsearchPanel" styleClass="btn btn-primary btn-sm" onclick="$('#myModal').modal('show')" oncomplete="$('#myModal').modal('hide')"/>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+       </apex:outputPanel> 
+        
+        <hr/>
+        
+        <apex:outputPanel id="idoutPanel">
+           
+        <div class="row">
+            <div class="col-md-12">
+                <apex:commandLink value="+" action="{!addRow}" reRender="idoutPanel" immediate="true" style="margin-left: -15px !important;" styleClass="btn btn-primary btn-sm" onclick="$('#myModal').modal('show')" oncomplete="$('#myModal').modal('hide')"/>
+            </div>
+        </div>
+        
+        <div class="row">
+            <table class="table">
+                <apex:variable var="countTeam" value="{!1}" />
+                <apex:repeat value="{!accTeamWrpList}" var="row" id="pbTable">
+                        <tr>
+                            <td class="col-md-1">
+                                {!countTeam}
+                            </td>
+                            
+                            <td class="col-md-1">
+                                <strong>
+                                    <apex:commandLink value="-" action="{!removeRow}" rerender="idoutPanel" immediate="true" styleClass="btn btn-danger btn-sm" onclick="$('#myModal').modal('show')" oncomplete="$('#myModal').modal('hide')">
+                                        <apex:param value="{!countTeam-1}" name="rowToRemove" assignTo="{!rowToRemove}"/>
+                                    </apex:commandLink>
+                                </strong>
+                            </td>
+                    
+                        <td class="col-md-4">
+                            <apex:inputField value="{!row.acc.ParentId}" onchange="getAccountTeam('{!countTeam-1}')"/> 
+                        </td>
+                        
+                        <td class="col-md-6">
+                            <apex:outputPanel id="idoutPanelTeam">
+                            
+                            <div class="row">
+                                <div class="col-md-12"><!-- idoutPanelTeam -->
+                                    <apex:commandLink value="+" action="{!addTeamRow}" reRender="idoutPanel" immediate="true" style="margin-left: 5px !important;" styleClass="btn btn-primary btn-sm" onclick="$('#myModal').modal('show')" oncomplete="$('#myModal').modal('hide')">
+                                        <apex:param value="{!countTeam-1}" name="rowToRemove" assignTo="{!rowToRemove}"/>
+                                    </apex:commandLink>
+                                </div>
+                            </div>
+                            
+                            <table class="table">
+                            <thead>
+                              <tr>
+                                <th class="col-md-1"></th>
+                                <th class="col-md-4">Team Member</th>
+                                <th class="col-md-4">Account Access</th>
+                                <th class="col-md-3">Team Role</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                            	<apex:variable var="countTeamInner" value="{!1}" />
+                                <apex:repeat value="{!row.accTeamList}" var="rowTeam">
+                                    <tr>
+                                    <td class="col-md-1">
+                                        <strong><!-- idoutPanelTeam -->
+                                            <apex:commandLink value="-" action="{!removeTeamRow}" rerender="idoutPanel" immediate="true" styleClass="btn btn-danger btn-sm" onclick="$('#myModal').modal('show')" oncomplete="$('#myModal').modal('hide')">
+                                                <apex:param value="{!countTeam-1}" name="rowToRemove" assignTo="{!rowToRemove}"/>
+                                                <apex:param value="{!countTeamInner-1}" name="rowToTeam" assignTo="{!rowToTeam}"/>
+                                            </apex:commandLink>
+                                        </strong>
+                                    </td>
+                                
+                                    <td class="col-md-4">
+                                        <apex:inputField value="{!rowTeam.UserId}"></apex:inputField>
+                                    </td>
+                                
+                                    <td class="col-md-4">
+                                        <apex:inputField value="{!rowTeam.AccountAccessLevel}"></apex:inputField>
+                                    </td>
+                                
+                                    <td class="col-md-3">
+                                        <apex:inputField value="{!rowTeam.TeamMemberRole}"></apex:inputField>
+                                    </td>
+                                    </tr>
+                                    <apex:variable var="countTeamInner" value="{!countTeamInner+1}" />
+                                </apex:repeat>
+                            </tbody>
+                            </table>
+                            </apex:outputPanel>
+                        </td>    
+                    </tr>
+                    <apex:variable var="countTeam" value="{!countTeam+1}" />
+                </apex:repeat> 
+            </table>
+        </div>
+        
+        </apex:outputPanel>
+           
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <apex:commandLink value="Add/Update" action="{!saveRecords}" reRender="idoutPanel,msgs" styleClass="btn btn-primary btn-sm" onclick="$('#myModal').modal('show')" oncomplete="$('#myModal').modal('hide')"/>
+            </div>
+        </div>
+            
+        
+        <apex:actionFunction action="{!getAccountTeamData}" name="getAccountTeam" reRender="idoutPanel">
+            <apex:param value="" name="rowToRemove" assignTo="{!rowToRemove}"/>
+        </apex:actionFunction>
+        
+        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="myModal">
+          <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content" style="width:0px;margin-top: 100%;margin-left: 45%;">
+                <img src="/img/loading32.gif" width="25" height="25" />
+            </div>
+          </div>
+        </div>
+    
+    </div>  
+    </apex:form>
+</apex:page>
