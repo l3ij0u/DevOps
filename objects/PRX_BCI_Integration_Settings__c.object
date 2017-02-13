@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>PRX BCI Integration Settings</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>PRX_B2B_Gateway_Endpoint__c</fullName>
+        <description>PRX B2B Gateway Endpoint</description>
+        <externalId>false</externalId>
+        <inlineHelpText>PRX B2B Gateway Endpoint</inlineHelpText>
+        <label>PRX B2B Gateway Endpoint</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PRX_B2B_Mutual_Auth_Cert__c</fullName>
+        <description>PRX B2B Mutual Auth Cert</description>
+        <externalId>false</externalId>
+        <inlineHelpText>PRX B2B Mutual Auth Cert</inlineHelpText>
+        <label>PRX B2B Mutual Auth Cert</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PRX_Message_Sign_Cert__c</fullName>
+        <externalId>false</externalId>
+        <label>PRX Message Sign Cert</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>PRX BCI Integration Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

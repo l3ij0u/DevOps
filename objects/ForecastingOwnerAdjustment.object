@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ProductFamily</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>WAN-LAN Connectivity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Network-based Communication</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Network Enabled Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Professional Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Internet of Things</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Communication &amp; Collaboration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Applications</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Datacenter Infrastructure</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Security</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ICT Affiliates</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>out</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddInfluence</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Amount</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>App_status__c</fullName>
+        <externalId>false</externalId>
+        <label>App status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>InProgress</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>CampaignId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CloseDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Complex_Bid_Approval_Type_Child_Records__c</fullName>
+        <externalId>false</externalId>
+        <label>Complex Bid Approval Type Child Records</label>
+        <summaryFilterItems>
+            <field>PRX_Approvals__c.PRX_Approval_Type__c</field>
+            <operation>equals</operation>
+            <value>Complex Bid</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>PRX_Approvals__c.PRX_Final_Status__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </summaryFilterItems>
+        <summaryForeignKey>PRX_Approvals__c.PRX_Opportunity_Name__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>ContractId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ExpectedRevenue</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsPrivate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Seminar - Internal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Seminar - Partner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <inlineHelpText>= Account + solution + date
+Example: &quot;Colruyt - Data storage - Aug 2017&quot;</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>NextStep</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Number_of_Request_Sent__c</fullName>
+        <description>Calculate number of childs</description>
+        <externalId>false</externalId>
+        <label>Number of Child Records</label>
+        <summaryForeignKey>PRX_Approvals__c.PRX_Opportunity_Name__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Responses_Received__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of approved records</label>
+        <summaryFilterItems>
+            <field>PRX_Approvals__c.PRX_Final_Status__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </summaryFilterItems>
+        <summaryForeignKey>PRX_Approvals__c.PRX_Opportunity_Name__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PRX_Approval_Ongoing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>You can edit the opportunity, but not close it before the approval flow has been closed.</inlineHelpText>
+        <label>Approval Ongoing</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PRX_BCI_Opportunity_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>BCI Opportunity ID</label>
+        <length>15</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PRX_Lost_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Lost Reason</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Opportunity Entered In Error</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Cancelled The Opportunity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No Bid</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Price</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Solution &amp; Service Fit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Relationship With Customer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>PRX_OpportunityID__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PRX_Opportunity_Product_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity Product Count</label>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Pricebook2Id</fullName>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Probability</fullName>
+        <inlineHelpText>uitleg voor elk %?</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>StageName</fullName>
+        <inlineHelpText>uitleg voor elke stage?</inlineHelpText>
+        <picklist>
+            <picklistValues>
+                <fullName>Prospecting</fullName>
+                <default>false</default>
+                <closed>false</closed>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>10</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Create Proposal</fullName>
+                <default>false</default>
+                <closed>false</closed>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>20</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Get Approval</fullName>
+                <default>false</default>
+                <closed>false</closed>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>30</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Present Proposal</fullName>
+                <default>false</default>
+                <closed>false</closed>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>40</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Negotiate</fullName>
+                <default>false</default>
+                <closed>false</closed>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>60</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Decision Made</fullName>
+                <default>false</default>
+                <closed>false</closed>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>70</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed Won</fullName>
+                <default>false</default>
+                <closed>true</closed>
+                <forecastCategory>Closed</forecastCategory>
+                <probability>100</probability>
+                <won>true</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed Lost</fullName>
+                <default>false</default>
+                <closed>true</closed>
+                <forecastCategory>Omitted</forecastCategory>
+                <probability>0</probability>
+                <won>false</won>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>TotalOpportunityQuantity</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <inlineHelpText>tbc</inlineHelpText>
+        <picklist>
+            <picklistValues>
+                <fullName>New revenue for new product/solution</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Existing revenue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <listViews>
+        <fullName>AllOpportunities</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>ClosingNextMonth</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>NEXT_MONTH</value>
+        </filters>
+        <label>Closing Next Month</label>
+    </listViews>
+    <listViews>
+        <fullName>ClosingThisMonth</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>Closing This Month</label>
+    </listViews>
+    <listViews>
+        <fullName>Default_Opportunity_Pipeline</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>greaterOrEqual</operation>
+            <value>LAST_N_MONTHS:3</value>
+        </filters>
+        <label>Opportunity Pipeline</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpportunities</fullName>
+        <filterScope>Mine</filterScope>
+        <label>My Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>NewThisWeek</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <label>New This Week</label>
+    </listViews>
+    <listViews>
+        <fullName>Won</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.WON</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Won</label>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OPPORTUNITY.CLOSE_DATE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>OPPORTUNITY.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.SITE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>OPPORTUNITY.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.SITE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.STAGE_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.CLOSE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <validationRules>
+        <fullName>Do_Not_Accept_Special_Characters</fullName>
+        <active>true</active>
+        <errorConditionFormula>NOT(REGEX( Name, &quot;[a-zA-Z0-9 ]*$&quot;))</errorConditionFormula>
+        <errorDisplayField>Name</errorDisplayField>
+        <errorMessage>Please do not enter any special characters.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>PRX_Closed_Date_NotPast</fullName>
+        <active>true</active>
+        <description>It should not be possible to close opportunities with close date in the past . EXCPR-2581 - Release 1 - Track 1.1</description>
+        <errorConditionFormula>AND(OR(ISPICKVAL( StageName , &quot;Closed Won&quot;),ISPICKVAL(StageName , &quot;Closed Lost&quot;)), CloseDate &lt; TODAY() )</errorConditionFormula>
+        <errorDisplayField>CloseDate</errorDisplayField>
+        <errorMessage>Not be possible to close an opportunity with close date in the past</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>PRX_Opp_with_noproducts_cannotbeClosed</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND ($Profile.Name &lt;&gt; &quot;System Administrator&quot;, $UserRole.DeveloperName &lt;&gt; &quot;PRX_Admin_Light&quot; , 
+ISPICKVAL( StageName , &quot;Closed Won&quot;),
+( PRX_Opportunity_Product_Count__c  &lt; 1)
+)</errorConditionFormula>
+        <errorMessage>If Opportunity don&apos;t have any products,it cannot be Closed Won</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>PRX_Opportunity_TotalContractValue_625k</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(Amount&gt;=625000,
+TEXT(StageName) ==&apos;Closed Won&apos;,Complex_Bid_Approval_Type_Child_Records__c =0,
+OR( ISPICKVAL(App_status__c, &apos;&apos;),ISPICKVAL(App_status__c, &apos;Approved&apos;)))</errorConditionFormula>
+        <errorMessage>Since your opportunity value has reached 625000.You will have to create approval request for complex bid before marking the opportunity as closed Won.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>PRX_Reopen_Closed_Opportunity</fullName>
+        <active>true</active>
+        <description>It should not be possible for a any user to reopen closed opportunities. EXCPR-2580. Track 1.1 - Release 1</description>
+        <errorConditionFormula>AND($Profile.Name &lt;&gt; &quot;System Administrator&quot;, $UserRole.DeveloperName &lt;&gt; &quot;PRX_Admin_Light&quot; ,
+OR(ISPICKVAL(PRIORVALUE(StageName),&quot;Closed Won&quot;),ISPICKVAL(PRIORVALUE(StageName),&quot;Closed Lost&quot;)) , NOT(ISBLANK( Id )))</errorConditionFormula>
+        <errorMessage>An Opportunity cannot be modified if it has reached Closed Stage</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>PRX_Restricting_Opportunity_Creation</fullName>
+        <active>true</active>
+        <description>Restricting Opportunity Creation if Account is InActive</description>
+        <errorConditionFormula>AND($Profile.Name &lt;&gt; &quot;System Administrator&quot;, $UserRole.DeveloperName &lt;&gt; &quot;PRX_Admin_Light&quot; , 
+OR(ISPICKVAL(Account.PRX_CDB_Account_Status__c, &quot;Inactive&quot;)))</errorConditionFormula>
+        <errorMessage>Opportunities cannot be Created/Edited if the Account is Inactive</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>PRX_TotalContractValue_Is_More_Than_625k</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( Amount &gt;= 625000, Complex_Bid_Approval_Type_Child_Records__c &gt;=1,Number_of_Request_Sent__c &gt; 0, TEXT(StageName) ==&apos;Closed Won&apos;, NOT(ISPICKVAL(App_status__c, &apos;Approved&apos;)))</errorConditionFormula>
+        <errorMessage>Opportunity cannot be &apos;Closed Won&apos; for complex bid approval In-progress.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>PRX_Type_Mandatory_For_SalesUser</fullName>
+        <active>true</active>
+        <description>Type should be mandatory when Stage is Lost. Track 1.1 - Release 1 - Not applicable to Admin</description>
+        <errorConditionFormula>AND( $Profile.Name  &lt;&gt;  &quot;System Administrator&quot;, $UserRole.DeveloperName &lt;&gt; &quot;PRX_Admin_Light&quot; ,TEXT(StageName) == &quot;Closed Lost&quot; , ISBLANK(TEXT( PRX_Lost_Reason__c )) )</errorConditionFormula>
+        <errorDisplayField>PRX_Lost_Reason__c</errorDisplayField>
+        <errorMessage>Please enter a value for Lost Reason</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>PRX_Validate_Open_Opportunities</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(ISPICKVAL( App_status__c,&apos;Inprogress&apos;), ISPICKVAL( StageName , &apos;Closed Won&apos;))</errorConditionFormula>
+        <errorMessage>Opportunity cannot be ¨Closed Won¨ when there is In-progress approvals</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Clone_Custom</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Clone</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>var r = confirm(&quot;Click OK to clone without Product and Cancel to clone with Product&quot;);
+if (r == true) {
+    window.location = &quot;https://cs83.salesforce.com/{!Opportunity.Id}/e?clone=1&amp;retURL={!Opportunity.Id}&amp;cloneli=1&amp;00N58000009RtU0=&quot;;
+} else {
+    window.location = &quot;https://cs83.salesforce.com/{!Opportunity.Id}/e?clone=1&amp;retURL={!Opportunity.Id}&amp;cloneli=2&amp;00N58000009RtU0=&quot;;
+}</url>
+    </webLinks>
+</CustomObject>

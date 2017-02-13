@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Object to be used to upload data without data loader</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>PRX_Action__c</fullName>
+        <externalId>false</externalId>
+        <label>Action</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Account Team Update</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>PRX_Error_Log__c</fullName>
+        <externalId>false</externalId>
+        <label>Error Log</label>
+        <length>131070</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>PRX_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Failed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>PRX_Admin_Data_Load</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>AD-{000000}</displayFormat>
+        <label>PRX_Admin_Data_Load No</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Admin Data Load</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <webLinks>
+        <fullName>Load</fullName>
+        <availability>online</availability>
+        <description>Load the attachment</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Load</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/37.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/37.0/apex.js&quot;)}
+
+//Get Opportunity id 
+var recId = &quot;{!PRX_Admin_Data_Load__c.Id}&quot;;
+var recType = &quot;{!PRX_Admin_Data_Load__c.PRX_Action__c}&quot;;
+
+//Call insertJob method by passing that Opportunity id 
+
+var ret = sforce.apex.execute(&quot;PRX_POC_FutureHandler&quot;,&quot;updateAdmDataService&quot;,{adlID:recId,Type:recType});
+
+var adl = new sforce.SObject(&quot;PRX_Admin_Data_Load__c&quot;);
+adl.Id = &quot;{!PRX_Admin_Data_Load__c.Id}&quot;;
+adl.PRX_Status__c = &quot;In Progress&quot;;
+sforce.connection.update([adl]);
+
+alert(ret);
+
+window.location.reload();</url>
+    </webLinks>
+</CustomObject>
