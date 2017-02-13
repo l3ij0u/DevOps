@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Leader – Ent. Care Team1</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Leader – Ent. Care Team1</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Manager_Lv3_Converged</parentRole>
+</Role>

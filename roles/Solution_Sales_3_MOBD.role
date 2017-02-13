@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Solution Sales 3 (MOBD)</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Solution Sales 3 (MOBD)</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Solsa_Unit_Manager3_MOBD</parentRole>
+</Role>

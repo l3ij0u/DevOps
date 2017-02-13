@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Chief Enterprise Market Officer</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Chief Enterprise Market Officer</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>PRX_Admin_Light</parentRole>
+</Role>

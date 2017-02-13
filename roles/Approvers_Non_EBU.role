@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Approvers (Non EBU)</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Approvers (Non EBU)</name>
+    <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    <parentRole>Chief_Enterprise_Market_Officer</parentRole>
+</Role>
