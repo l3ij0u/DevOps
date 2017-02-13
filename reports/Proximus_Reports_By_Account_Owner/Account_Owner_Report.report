@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User.Account$OwnerId$Name</field>
+    </columns>
+    <columns>
+        <field>User.Account$OwnerId$Id</field>
+    </columns>
+    <columns>
+        <field>User.Account$OwnerId$Owner</field>
+    </columns>
+    <columns>
+        <field>User$EmployeeNumber</field>
+    </columns>
+    <columns>
+        <field>User$UserRole</field>
+    </columns>
+    <columns>
+        <field>User.Account$OwnerId$Account_Group__c</field>
+    </columns>
+    <columns>
+        <field>User.Account$OwnerId$PRX_Proximus_CDB_Id__c</field>
+    </columns>
+    <columns>
+        <field>User.Account$OwnerId$Type</field>
+    </columns>
+    <columns>
+        <field>User.Account$OwnerId$LastModifiedDate</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Account Owner Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_vs_Users__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>User.Account$OwnerId$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>User.Account$OwnerId$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>
