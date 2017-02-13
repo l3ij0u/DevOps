@@ -1,0 +1,1 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><ResponseDataCreateOpportunity xmlns="urn:v1.opportunity.bci-int.services.bgc"><notification>1</notification><detail><keyinformation><OPPORTUNITY_ID>9242777</OPPORTUNITY_ID></keyinformation></detail></ResponseDataCreateOpportunity></soapenv:Body></soapenv:Envelope>
