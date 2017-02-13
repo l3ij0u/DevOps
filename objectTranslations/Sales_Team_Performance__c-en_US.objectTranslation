@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sales Team Performance</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sales Team Performance</value>
+    </caseValues>
+    <fields>
+        <label><!-- Actuals End of Period --></label>
+        <name>Actuals_End_of_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actuals Semester Todate --></label>
+        <name>Actuals_Semester_Todate__c</name>
+    </fields>
+    <fields>
+        <label><!-- KPI --></label>
+        <name>KPI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Year End of Period --></label>
+        <name>Last_Year_End_of_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Year Semester Todate --></label>
+        <name>Last_Year_Semester_Todate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference Period of the KPI --></label>
+        <name>Reference_Period_of_the_KPI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target End Of Period --></label>
+        <name>Target_End_Of_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Semester Todate --></label>
+        <name>Target_Semester_Todate__c</name>
+    </fields>
+    <fields>
+        <label><!-- User&apos;s Id --></label>
+        <name>User_s_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- User&apos;s Level --></label>
+        <name>User_s_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- User&apos;s Name --></label>
+        <name>User_s_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- User&apos;s Unit --></label>
+        <name>User_s_Unit__c</name>
+    </fields>
+    <layouts>
+        <layout>Sales Team Performance Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>PRX_Admin_Data_Load</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Admin Data Load</value>
+    </caseValues>
+    <fields>
+        <label><!-- Action --></label>
+        <name>PRX_Action__c</name>
+        <picklistValues>
+            <masterLabel>Account Team Update</masterLabel>
+            <translation><!-- Account Team Update --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Error Log --></label>
+        <name>PRX_Error_Log__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>PRX_Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>PRX_Admin_Data_Load Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Load --></label>
+        <name>Load</name>
+    </webLinks>
+</CustomObjectTranslation>

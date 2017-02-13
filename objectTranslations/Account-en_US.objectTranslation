@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Number Of Employees</value>
+        </caseValues>
+        <name>employees_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Parent Id</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Parent Accounts</value>
+        </caseValues>
+        <name>parent_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <help><!-- tbc --></help>
+        <label><!-- Account Group --></label>
+        <name>Account_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- CDB Account Status --></label>
+        <name>CDB_Account_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PRX Account MSP --></label>
+        <name>PRX_Account_MSP__c</name>
+        <picklistValues>
+            <masterLabel>Test1</masterLabel>
+            <translation><!-- Test1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test2</masterLabel>
+            <translation><!-- Test2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test3</masterLabel>
+            <translation><!-- Test3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Blacklist (Fix) --></label>
+        <name>PRX_Blacklist_Fix__c</name>
+    </fields>
+    <fields>
+        <label><!-- Blacklist (Mobile) --></label>
+        <name>PRX_Blacklist_Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- CDB Account Status --></label>
+        <name>PRX_CDB_Account_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>PRX_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solvency Value --></label>
+        <name>PRX_Financial_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language --></label>
+        <name>PRX_Legal_Language__c</name>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EN</masterLabel>
+            <translation><!-- EN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FR</masterLabel>
+            <translation><!-- FR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NL</masterLabel>
+            <translation><!-- NL --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Micro Segment --></label>
+        <name>PRX_Micro_Segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- CDB Id --></label>
+        <name>PRX_Proximus_CDB_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- CDB Mobile Id --></label>
+        <name>PRX_Proximus_CDB_Mobile_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- VAT Number --></label>
+        <name>PRX_VAT_Number__c</name>
+    </fields>
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- CDB Information --></label>
+            <section>CDB Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PRX_Account Layout for Sales user</layout>
+        <sections>
+            <label><!-- CDB Information --></label>
+            <section>CDB Information</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- Account Name cannot be edited --></errorMessage>
+        <name>PRX_AccountName_ReadOnly_For_SalesUser</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Account Owner cannot be edited --></errorMessage>
+        <name>PRX_AccountOwner_ReadOnly_For_SalesUser</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- InActive Accounts cannot be edited --></errorMessage>
+        <name>PRX_Inactive_Account_Access</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+</CustomObjectTranslation>

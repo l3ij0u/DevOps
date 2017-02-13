@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Case Conclusion</value>
+        </caseValues>
+        <name>case_reason</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Original Email</value>
+        </caseValues>
+        <name>web_email_case</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Original Name</value>
+        </caseValues>
+        <name>web_name_case</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- PRXChildCount --></label>
+        <name>PRXChildCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- PRXConCatString --></label>
+        <name>PRXConCatString__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>PRX_Category__c</name>
+        <picklistValues>
+            <masterLabel>Converged</masterLabel>
+            <translation><!-- Converged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fixed Line</masterLabel>
+            <translation><!-- Fixed Line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICT</masterLabel>
+            <translation><!-- ICT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile</masterLabel>
+            <translation><!-- Mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Conclusion details --></label>
+        <name>PRX_Conclusion_details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Detail --></label>
+        <name>PRX_Detail__c</name>
+        <picklistValues>
+            <masterLabel>TBD</masterLabel>
+            <translation><!-- TBD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PRX Enforce Closure Mandatory --></label>
+        <name>PRX_Enforce_Closure_Mandatory__c</name>
+    </fields>
+    <fields>
+        <label><!-- PRX MultiPicklist --></label>
+        <name>PRX_MultiPicklist__c</name>
+        <picklistValues>
+            <masterLabel>Test1</masterLabel>
+            <translation><!-- Test1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test2</masterLabel>
+            <translation><!-- Test2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test3</masterLabel>
+            <translation><!-- Test3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Non First time right reason(s) --></label>
+        <name>PRX_Non_First_time_right_reason_s__c</name>
+        <picklistValues>
+            <masterLabel>Test1</masterLabel>
+            <translation><!-- Test1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test2</masterLabel>
+            <translation><!-- Test2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test3</masterLabel>
+            <translation><!-- Test3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Order Reference --></label>
+        <name>PRX_Order_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quality feedback --></label>
+        <name>PRX_Quality_feedback__c</name>
+        <picklistValues>
+            <masterLabel>First time right</masterLabel>
+            <translation><!-- First time right --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non first time right</masterLabel>
+            <translation><!-- Non first time right --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>PRX_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ready For Service --></label>
+        <name>PRX_Ready_For_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Flag --></label>
+        <name>PRX_SLA_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Request Date --></label>
+        <name>PRX_Service_Request_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Category --></label>
+        <name>PRX_Sub_Category__c</name>
+        <picklistValues>
+            <masterLabel>TBD</masterLabel>
+            <translation><!-- TBD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Record as per Role Hierarchy --></label>
+        <name>Record_as_per_Role_Hierarchy__c</name>
+    </fields>
+    <layouts>
+        <layout>Case Feed Layout</layout>
+        <layoutType>CaseInteraction</layoutType>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Layout</layout>
+        <sections>
+            <label><!-- Case Categorization --></label>
+            <section>Case Categorization</section>
+        </sections>
+        <sections>
+            <label><!-- Order Reference --></label>
+            <section>Order Reference</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Portal Case Layout</layout>
+        <sections>
+            <label><!-- Case Categorization --></label>
+            <section>Case Categorization</section>
+        </sections>
+        <sections>
+            <label><!-- Order Reference --></label>
+            <section>Order Reference</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- NewChildCase --></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- SendEmail --></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Test --></label>
+        <name>Test</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage><!-- yo2 --></errorMessage>
+        <name>PRX_CaseConclusion_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select Non First time right reason(s) field values before closing case. --></errorMessage>
+        <name>PRX_Select_Non_first_time_right_reasons</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select quality feedback field before closing the case. --></errorMessage>
+        <name>PRX_Select_Quality_feedback</name>
+    </validationRules>
+</CustomObjectTranslation>

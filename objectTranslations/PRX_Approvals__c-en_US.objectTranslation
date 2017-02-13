@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Approvals</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Approvals</value>
+    </caseValues>
+    <fields>
+        <label><!-- Days Open --></label>
+        <name>Days_Open__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Response Date Level 1 --></label>
+        <name>End_Date_Level_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Response Date Level 2 --></label>
+        <name>End_Date_Level_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Response Date Level 3 --></label>
+        <name>End_Date_Level_3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Approval Types --></help>
+        <label><!-- Approval Type --></label>
+        <name>PRX_Approval_Type__c</name>
+        <picklistValues>
+            <masterLabel>Complex Bid</masterLabel>
+            <translation><!-- Complex Bid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit Check</masterLabel>
+            <translation><!-- Credit Check --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance CORP</masterLabel>
+            <translation><!-- Finance CORP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance ME</masterLabel>
+            <translation><!-- Finance ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing ICT</masterLabel>
+            <translation><!-- Pricing ICT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing Telco Fix</masterLabel>
+            <translation><!-- Pricing Telco Fix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing Telco Mobile</masterLabel>
+            <translation><!-- Pricing Telco Mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical</masterLabel>
+            <translation><!-- Technical --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pricing Committee Escalation --></label>
+        <name>PRX_Committee_Escalation__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Complex Bid Approval --></label>
+        <name>PRX_Complex_Bid_Approval__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Awaiting Outcome</masterLabel>
+            <translation><!-- Awaiting Outcome --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Complex Bid Escalation --></label>
+        <name>PRX_Complex_Bid_Escalation__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Final Status --></label>
+        <name>PRX_Final_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Approval --></label>
+        <name>PRX_Finance_Approval__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Awaiting Outcome</masterLabel>
+            <translation><!-- Awaiting Outcome --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Finance Escalation --></label>
+        <name>PRX_Finance_Escalation__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Financial Risk --></label>
+        <name>PRX_Financial_Risk__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Awaiting Outcome</masterLabel>
+            <translation><!-- Awaiting Outcome --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Legal Approval --></label>
+        <name>PRX_Legal_Approval__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Awaiting Outcome</masterLabel>
+            <translation><!-- Awaiting Outcome --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Legal Escalation --></label>
+        <name>PRX_Legal_Escalation_1__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Name --></label>
+        <name>PRX_Opportunity_Name__c</name>
+        <relationshipLabel><!-- Approval --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pricing Approval --></label>
+        <name>PRX_Pricing_Approval_Outcome__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Awaiting Outcome</masterLabel>
+            <translation><!-- Awaiting Outcome --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pricing Director Escalation --></label>
+        <name>PRX_Pricing_Director_Escalation__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Technical approval --></label>
+        <name>PRX_Technical_approval__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Awaiting Outcome</masterLabel>
+            <translation><!-- Awaiting Outcome --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Approvals Layout</layout>
+        <sections>
+            <label><!-- Complex Bid - Approval --></label>
+            <section>Complex Bid - Approval</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Finance Approval --></label>
+            <section>Finance Approval</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Risk Approval --></label>
+            <section>Financial Risk Approval</section>
+        </sections>
+        <sections>
+            <label><!-- Legal Approvals --></label>
+            <section>Legal Approvals</section>
+        </sections>
+        <sections>
+            <label><!-- Pricing Approval --></label>
+            <section>Pricing Approval</section>
+        </sections>
+        <sections>
+            <label><!-- Technical Approval --></label>
+            <section>Technical Approval</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Complex Bid Layout</layout>
+        <sections>
+            <label><!-- Approval Information --></label>
+            <section>Approval Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Finance</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Financial Risk Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Legal Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Pricing Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Technical Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Complex Bid --></label>
+        <name>Complex_Bid</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Finance --></label>
+        <name>Finance</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Financial Risk --></label>
+        <name>Financial_Risk</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Legal --></label>
+        <name>Legal</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Pricing --></label>
+        <name>Pricing</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Technical --></label>
+        <name>Technical</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

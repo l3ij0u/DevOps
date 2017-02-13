@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Description</value>
+        </caseValues>
+        <name>line_description_opportunitylineitem</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Solution Quantity</value>
+        </caseValues>
+        <name>quantity_opportunitylineitem</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Total Contract Value (Solution)</value>
+        </caseValues>
+        <name>sales_price_opportunitylineitem</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Contract Duration (in months) --></label>
+        <name>PRX_Contract_Duration__c</name>
+    </fields>
+    <fields>
+        <help><!-- tbc --></help>
+        <label><!-- Number of Items --></label>
+        <name>PRX_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue Type --></label>
+        <name>PRX_Revenue_Type__c</name>
+        <picklistValues>
+            <masterLabel>Existing revenue</masterLabel>
+            <translation><!-- Existing revenue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New revenue for existing product/solution</masterLabel>
+            <translation><!-- New revenue for existing product/solution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New revenue for new product/solution</masterLabel>
+            <translation><!-- New revenue for new product/solution --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Opportunity Product Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PRX_Opportunity_Product_Layout_for_Sales_User</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

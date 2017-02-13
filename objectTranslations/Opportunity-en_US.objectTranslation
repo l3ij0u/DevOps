@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Total Contract Value</value>
+        </caseValues>
+        <name>amount_opportunity</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <label><!-- App status --></label>
+        <name>App_status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>InProgress</masterLabel>
+            <translation><!-- InProgress --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Complex Bid Approval Type Child Records --></label>
+        <name>Complex_Bid_Approval_Type_Child_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Child Records --></label>
+        <name>Number_of_Request_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of approved records --></label>
+        <name>Number_of_Responses_Received__c</name>
+    </fields>
+    <fields>
+        <help><!-- You can edit the opportunity, but not close it before the approval flow has been closed. --></help>
+        <label><!-- Approval Ongoing --></label>
+        <name>PRX_Approval_Ongoing__c</name>
+    </fields>
+    <fields>
+        <label><!-- BCI Opportunity ID --></label>
+        <name>PRX_BCI_Opportunity_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lost Reason --></label>
+        <name>PRX_Lost_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Customer Cancelled The Opportunity</masterLabel>
+            <translation><!-- Customer Cancelled The Opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Bid</masterLabel>
+            <translation><!-- No Bid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity Entered In Error</masterLabel>
+            <translation><!-- Opportunity Entered In Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relationship With Customer</masterLabel>
+            <translation><!-- Relationship With Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solution &amp; Service Fit</masterLabel>
+            <translation><!-- Solution &amp; Service Fit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity ID --></label>
+        <name>PRX_OpportunityID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Product Count --></label>
+        <name>PRX_Opportunity_Product_Count__c</name>
+    </fields>
+    <quickActions>
+        <label><!-- New Opportunity Product --></label>
+        <name>AddProductLine</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage><!-- Please do not enter any special characters. --></errorMessage>
+        <name>Do_Not_Accept_Special_Characters</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not be possible to close an opportunity with close date in the past --></errorMessage>
+        <name>PRX_Closed_Date_NotPast</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Opportunity don&apos;t have any products,it cannot be Closed Won --></errorMessage>
+        <name>PRX_Opp_with_noproducts_cannotbeClosed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Since your opportunity value has reached 625000.You will have to create approval request for complex bid before marking the opportunity as closed Won. --></errorMessage>
+        <name>PRX_Opportunity_TotalContractValue_625k</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- An Opportunity cannot be modified if it has reached Closed Stage --></errorMessage>
+        <name>PRX_Reopen_Closed_Opportunity</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunities cannot be Created/Edited if the Account is Inactive --></errorMessage>
+        <name>PRX_Restricting_Opportunity_Creation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity cannot be &apos;Closed Won&apos; for complex bid approval In-progress. --></errorMessage>
+        <name>PRX_TotalContractValue_Is_More_Than_625k</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a value for Lost Reason --></errorMessage>
+        <name>PRX_Type_Mandatory_For_SalesUser</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity cannot be ¨Closed Won¨ when there is In-progress approvals --></errorMessage>
+        <name>PRX_Validate_Open_Opportunities</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Clone_Custom --></label>
+        <name>Clone_Custom</name>
+    </webLinks>
+    <workflowTasks>
+        <description><!-- Hi, 
+
+Complex Bid approval required as this opportunity amount exceeds €625000. 
+
+Please raise the necessary required approval. 
+
+Thanks. --></description>
+        <name>Complex_Bid_Approval_Required</name>
+        <subject><!-- Complex Bid-Approval Required --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- Hi, 
+
+Financial Risk approval is required for this opportunity as the Opportunity amount is greater than Account Solvency Value 
+
+Thanks --></description>
+        <name>Financial_Risk_Credit_Check_Approval_Required</name>
+        <subject><!-- Financial Risk - Credit Check Approval Required --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

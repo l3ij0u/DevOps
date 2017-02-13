@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>PRX BCI Default Values</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>PRX BCI Default Values</value>
+    </caseValues>
+    <fields>
+        <label><!-- PROD_CATEGORY --></label>
+        <name>PROD_CATEGORY__c</name>
+    </fields>
+    <fields>
+        <label><!-- PROD_CONFIDENCE_PCT --></label>
+        <name>PROD_CONFIDENCE_PCT__c</name>
+    </fields>
+    <fields>
+        <label><!-- PROD_PRICE --></label>
+        <name>PROD_PRICE__c</name>
+    </fields>
+    <fields>
+        <label><!-- PROD_QUANTITY --></label>
+        <name>PROD_QUANTITY__c</name>
+    </fields>
+    <fields>
+        <label><!-- PROD_REGIME --></label>
+        <name>PROD_REGIME__c</name>
+    </fields>
+    <fields>
+        <label><!-- PROD_SETID --></label>
+        <name>PROD_SETID__c</name>
+    </fields>
+    <fields>
+        <label><!-- PRX BCI Opportunity Type --></label>
+        <name>PRX_BCI_Opportunity_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- PRX BCI ProductID --></label>
+        <name>PRX_BCI_ProductID__c</name>
+    </fields>
+    <fields>
+        <label><!-- PRX Business Unit --></label>
+        <name>PRX_Business_Unit__c</name>
+    </fields>
+    <fields>
+        <label><!-- PRX Opp Specification Type --></label>
+        <name>PRX_Opp_Specification_Type__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
