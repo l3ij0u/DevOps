@@ -1,0 +1,9 @@
+<aura:component controller="BMT_CustomerTableController" implements="force:lightningQuickActionWithoutHeader,force:appHostable,flexipage:availableForAllPageTypes" access="global" >
+	<aura:attribute name="customers" type="String"/>
+    <br/> <br/><center>
+    <ui:button press="{!c.getCustomerData}" label="Get The Customers Data"/>
+    </center>
+    <br/> <br/><hr/>
+    <center>
+{!v.customers}</center>
+</aura:component>

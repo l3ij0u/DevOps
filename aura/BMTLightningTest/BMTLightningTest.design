@@ -1,0 +1,3 @@
+<design:component label="BMTLightningTest">
+    <design:attribute name="customers" label="Response" description="Response" />
+</design:component>
